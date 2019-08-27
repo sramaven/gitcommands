@@ -1,0 +1,45 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <!-- A simple bean definition -->
+   <bean id = "Question" class = "com.capg.SpringAssignment.Question.Question">
+      <property name="questionId" value="1"/>
+      <property name="question" value="What is this state?"/>
+      <property name="answers">
+       <list>
+            <value>AP</value>
+            <value>AP</value>
+            <value>TELANGANA</value>
+            <value>KARNATAKA</value>
+         </list>
+      </property>
+      <property name="answers1">
+      
+      <set>
+            <value>AP</value>
+            <value>TELANGANA</value>
+            <value>TELANGANA</value>
+            <value>TAMILNADU</value>
+         </set>
+      </property>
+      <property name="answers2">
+       <map>
+            <entry key = "1" value = "AP"/>
+            <entry key = "2" value = "AP"/>
+            <entry key = "3" value = "TELANGANA"/>
+            <entry key = "4" value = "TELANGANA"/>
+         </map>
+      </property>
+      
+   </bean>
+  
+   
+   
+
+  
+   
+</beans>
